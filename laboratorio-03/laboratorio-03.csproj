@@ -150,6 +150,12 @@
   <ItemGroup>
     <None Include="Resources\bienvenida.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\capaNegocio\capaNegocio.csproj">
+      <Project>{cbcaf642-3c4c-478b-a93f-0208d15e02e8}</Project>
+      <Name>capaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

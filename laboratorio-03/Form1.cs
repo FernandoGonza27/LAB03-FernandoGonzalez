@@ -26,14 +26,16 @@ namespace laboratorio_03
             formNuevo.BringToFront();
             formNuevo.Show();
         }
-        private void btnClientes_Click(object sender, EventArgs e)
-        {
-            abrirForm(new frmEmpleados());
-        }
+       
 
-        private void btnCompras_Click(object sender, EventArgs e)
+        private void btnCompras_Click_1(object sender, EventArgs e)
         {
             abrirForm(new frmCompras());
+        }
+
+        private void btnClientes_Click_1(object sender, EventArgs e)
+        {
+            abrirForm(new frmEmpleados());
         }
     }
 }
