@@ -24,11 +24,11 @@ namespace laboratorio_03
             {
                 string[] datos = { "cedula", "nombre", "apellido_1", "sexo", "fecha_nacimiento" };
 
-                DataTable informacionEstudiantes = new DataTable();
+                DataTable informacionEmpleados = new DataTable();
 
-                informacionEstudiantes = Consultas.consultarTodosElementos("clientes", datos);
+                informacionEmpleados = Consultas.consultarTodosElementos("clientes", datos);
 
-                dgvClientes.DataSource = informacionEstudiantes;
+                dgvClientes.DataSource = informacionEmpleados;
             }
             catch (Exception ex)
             {
