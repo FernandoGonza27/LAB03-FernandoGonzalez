@@ -16,5 +16,24 @@ namespace laboratorio_03
         {
             InitializeComponent();
         }
+        private void abrirForm(Form formNuevo)
+        {
+
+            formNuevo.TopLevel = false;
+            formNuevo.FormBorderStyle = FormBorderStyle.None;
+            formNuevo.Dock = DockStyle.Fill;
+            panelContenedor.Controls.Add(formNuevo);
+            formNuevo.BringToFront();
+            formNuevo.Show();
+        }
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            abrirForm(new frmEmpleados());
+        }
+
+        private void btnCompras_Click(object sender, EventArgs e)
+        {
+            abrirForm(new frmCompras());
+        }
     }
 }
